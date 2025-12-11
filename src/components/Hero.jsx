@@ -83,7 +83,7 @@ const Hero = () => {
         <Image
           src={hero2}
           alt="RHCSA Badge"
-          className="absolute bottom-20 left-1 w-45 up-down"
+          className="absolute bottom-20 left-1 w-46 up-down"
         />
 
         <div className="absolute top-1/3 right-16 -translate-y-1/2 px-5 py-4 rounded-2xl shadow-lg border border-white/10 flex items-center gap-4 bg-gray-800/70 up-down ">
