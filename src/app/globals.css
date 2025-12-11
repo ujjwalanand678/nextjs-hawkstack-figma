@@ -3,6 +3,7 @@
 
 
 @layer utilities {
+/* ////////////////////////////////////////////////////// */
   @keyframes cloud-left-right {
     0% { transform: translateX(0); }
     50% { transform: translateX(60px); }
@@ -12,7 +13,7 @@
   .animate-cloud {
     animation: cloud-left-right 5s ease-in-out infinite;
   }
-
+/* ///////////////////////////////////////////// */
     @keyframes up-down {
     0% { transform: translateY(0); }
     50% { transform: translateY(60px); }
@@ -22,5 +23,65 @@
   .up-down {
     animation: up-down 5s ease-in-out infinite;
   }
+
+/* ///////////////////////////////// */
+@keyframes rotateForward {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(12deg);
+  }
 }
+
+
+@keyframes rotateBackward {
+  from {
+    transform: rotate(12deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate-icon {
+  transform: rotate(0deg);
+  animation-fill-mode: forwards;
+}
+
+.rotate-icon:hover {
+  animation: rotateForward 0.4s ease-in-out forwards;
+}
+
+.rotate-icon:not(:hover) {
+  animation: rotateBackward 0.4s ease-in-out forwards;
+}
+
+}
+
+/* Reusable hover gradient from black → red */
+.hover-black-red {
+  transition: background 0.35s ease;
+}
+
+.hover-black-red:hover {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.25),
+    rgba(230, 0, 0, 0.25)
+  );
+}
+/* for black to blue hover */
+.hover-black-blue {
+  transition: background 0.35s ease;
+}
+
+.hover-black-blue:hover {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.25),
+    rgba(83, 115, 255, 0.25)
+  );
+}
+
 
