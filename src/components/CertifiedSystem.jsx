@@ -13,7 +13,7 @@ const CertifiedSystem = () => {
             w-16 h-16 rounded-2xl flex items-center justify-center 
             bg-linear-to-b from-red-500 via-purple-500 to-blue-500
             mb-6
-            drop-shadow-xl
+            drop-shadow-2xl
           drop-shadow-red-500/50
           "
         >
