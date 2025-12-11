@@ -3,6 +3,7 @@ import hero from "@/assets/images/hero.png";
 import hero1 from "@/assets/images/hero1.png";
 import hero2 from "@/assets/images/hero2.png";
 import { PiMedalLight } from "react-icons/pi";
+import { IoShield } from "react-icons/io5";
 
 const Hero = () => {
   return (
@@ -82,11 +83,11 @@ const Hero = () => {
         <Image
           src={hero2}
           alt="RHCSA Badge"
-          className="absolute bottom-20 left-1 w-50 up-down"
+          className="absolute bottom-20 left-1 w-45 up-down"
         />
 
         <div className="absolute top-1/3 right-16 -translate-y-1/2 px-5 py-4 rounded-2xl shadow-lg border border-white/10 flex items-center gap-4 bg-gray-800/70 up-down ">
-          <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center "></div>
+          <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center text-white"><IoShield size={26} /></div>
           <div>
             <p className="text-gray-300 text-sm">Security Status</p>
             <p className="text-white ">All Systems Protected</p>
