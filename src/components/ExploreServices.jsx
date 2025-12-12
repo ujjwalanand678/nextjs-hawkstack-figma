@@ -35,9 +35,9 @@ const ExploreServices = () => {
   return (
     <>
       <section className="relative w-full text-center py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 bg-[#1A1A1A] overflow-hidden">
-        <div className="absolute right-[-10px] w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-[rgba(60,120,255,0.28)] blur-[100px]"></div>
+        <div className="absolute right-[100px] w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-[rgba(60,120,255,0.28)] blur-[100px]"></div>
 
-        <div className="absolute left-[-10px] w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-[rgba(255,50,50,0.28)] blur-[110px]"></div>
+        <div className="absolute left-[100px] w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-[rgba(255,50,50,0.28)] blur-[110px]"></div>
 
         <h2 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-8 md:mb-12 z-10">
           Explore Red Hat Services
